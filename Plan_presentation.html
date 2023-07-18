@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style>
+			table {
+				background-color: #191919;
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			
+			td, th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+			
+			tr:nth-child(even) {
+				background-color: #191919
+			}
+			</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Titre de la présentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<section>Nom de la présentation</section>
+				<section><h1>🎯</h1><br><h2>Les objectifs opérationnels</h2>
+						<section><br><br>
+					<ul>
+						<li>1 -  Lorem Ipsum ...</li>
+						<li>2 -  Lorem Ipsum ...</li>
+						<li>3 -  Lorem Ipsum ...</li>
+					</ul>
+						</section>
+				
+				</section>
+				<section><strong>Fonctionnement & déroulé</strong>
+				<div>
+					<br><br>
+				<table>
+					<tr>
+						<th><h2>...</h2></th>
+						<th><h2>🕑</h2></th>
+						<th><h2>Stagiaires</h2></th>
+					</tr>
+					<tr>
+						<td>Alfreds Futterkiste</td>
+						<td><p id="demo"></p></td>
+						<td>6 à 8 pers.</td>
+					</tr>
+				</table></div>
+			</section>
+			
+
+				<section>Plans des Séquences</section>
+			</section>
+								<section>Séquences 1</section>
+								<section>Séquences 2</section>
+								<section>Séquences 3</section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			// Date & Heure /
+			
+const d = new Date(2023, 06, 24, 10, 33);
+document.getElementById("demo").innerHTML = d;
+
+		</script>
+	</body>
+</html>
